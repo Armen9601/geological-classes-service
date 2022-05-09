@@ -1,4 +1,4 @@
-# LORD-PLANET
+# GEOLOGICAL-CLASSES-SERVICE
 
 [Spring Boot](http://projects.spring.io/spring-boot/) app.
 
