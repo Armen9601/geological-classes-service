@@ -2,17 +2,20 @@ package com.example.geologicalclassesservice.service;
 
 import com.example.geologicalclassesservice.request.SectionRequest;
 import com.example.geologicalclassesservice.response.SectionResponse;
+
 import java.util.List;
 
 public interface SectionService {
 
-  SectionResponse findById(Long id);
+    SectionResponse findById(Long id);
 
-  void update(Long id, SectionRequest sectionRequest);
+    void update(Long id, SectionRequest sectionRequest);
 
-  void add(SectionRequest sectionRequest);
+    void add(SectionRequest sectionRequest);
 
-  List<SectionResponse> findAll(int page, int size);
+    List<SectionResponse> findAll(int page, int size);
 
-  void deleteById(Long id);
+    void deleteById(Long id);
+
+    List<SectionResponse> findAllByGeologicClassesCode(String code);
 }

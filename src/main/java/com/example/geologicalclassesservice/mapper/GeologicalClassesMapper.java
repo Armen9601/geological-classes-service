@@ -11,17 +11,17 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class GeologicalClassesMapper
-    implements BaseMapper<GeologicClass, GeologicalClassRequest, GeologicalClassResponse> {
+        implements BaseMapper<GeologicClass, GeologicalClassRequest, GeologicalClassResponse> {
 
-  private final ModelMapper mapper;
+    private final ModelMapper mapper;
 
-  @Override
-  public GeologicClass toEntity(GeologicalClassRequest geologicalClassRequest) {
-    return mapper.map(geologicalClassRequest, GeologicClass.class);
-  }
+    @Override
+    public GeologicClass toEntity(GeologicalClassRequest geologicalClassRequest) {
+        return mapper.map(geologicalClassRequest, GeologicClass.class);
+    }
 
-  @Override
-  public GeologicalClassResponse toResponse(GeologicClass geologicClass) {
-    return mapper.map(geologicClass, GeologicalClassResponse.class);
-  }
+    @Override
+    public GeologicalClassResponse toResponse(GeologicClass geologicClass) {
+        return mapper.map(geologicClass, GeologicalClassResponse.class);
+    }
 }

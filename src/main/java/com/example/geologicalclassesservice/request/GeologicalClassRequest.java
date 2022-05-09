@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class GeologicalClassRequest {
 
-  private String name;
-  private String code;
+    private String name;
+    private String code;
 }

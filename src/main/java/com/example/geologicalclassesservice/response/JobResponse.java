@@ -1,16 +1,15 @@
 package com.example.geologicalclassesservice.response;
 
+import com.example.geologicalclassesservice.entity.Status;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class SectionResponse {
+public class JobResponse {
 
-    private String name;
-    private List<GeologicalClassResponse> geologicalClassResponses;
+    private Status status;
+
 }

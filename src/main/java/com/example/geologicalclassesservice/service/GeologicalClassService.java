@@ -2,17 +2,18 @@ package com.example.geologicalclassesservice.service;
 
 import com.example.geologicalclassesservice.request.GeologicalClassRequest;
 import com.example.geologicalclassesservice.response.GeologicalClassResponse;
+
 import java.util.List;
 
 public interface GeologicalClassService {
 
-  GeologicalClassResponse findById(Long id);
+    GeologicalClassResponse findById(Long id);
 
-  void update(Long id, GeologicalClassRequest geologicalClassRequest);
+    void update(Long id, GeologicalClassRequest geologicalClassRequest);
 
-  void add(GeologicalClassRequest geologicalClassRequest);
+    void add(GeologicalClassRequest geologicalClassRequest);
 
-  List<GeologicalClassResponse> findAll(int page, int size);
+    List<GeologicalClassResponse> findAll(int page, int size);
 
-  void deleteById(Long id);
+    void deleteById(Long id);
 }
